@@ -53,7 +53,7 @@ function installing_inji-verify() {
 
   INJIVERIFY_HOST=$(kubectl get cm global -o jsonpath={.data.mosip-injiverify-host})
   echo Installing INJIVERIFY
-  helm -n $NS install inji-verify mosip/injiverify \
+  helm -n $NS install inji-verify /mnt/d/Linux-MOSIP/MEC-PROD/esignet141/inji-verify/helm/inji-verify \
   -f values.yaml \
   --set istio.hosts\[0\]=$INJIVERIFY_HOST \
   --version $CHART_VERSION
