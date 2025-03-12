@@ -12,7 +12,7 @@ function Deleting_injiverify() {
       read -p "Are you sure you want to delete all esignet helm charts?(Y/n) " yn
       if [ $yn = "Y" ]
         then
-          helm -n $NS delete inji-verify-injiverify
+          helm -n $NS delete inji-verify
           break
         else
           break
