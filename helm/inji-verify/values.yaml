@@ -419,8 +419,8 @@ metrics:
 ## Slash is important!
 inji_verify:
   port: '3004'
-  host: 'mimoto.mimoto'
-esignet_redirect_url: 'esignet.sandbox.xyz.net'
+##  host: 'mimoto.mimoto'
+##esignet_redirect_url: 'esignet.sandbox.xyz.net'
 istio:
   enabled: true
   ingressController:
@@ -431,5 +431,5 @@ istio:
       portName: http
       port: 80
   hosts:
-    - injiverify.sandbox.xyz.net
+    - injiverify.mec.mosip.net
   prefix: /
