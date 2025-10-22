@@ -28,7 +28,7 @@ jobs:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
 
   build-inji-verify-service:
-    uses: iiitb-pilot/kattu/.github/workflows/maven-build.yml@master-java21
+    uses: iiitb-pilot/kattu/.github/workflows/maven-build.yml@master
     with:
       SERVICE_LOCATION: ./
       BUILD_ARTIFACT: inji-verify-service
@@ -51,7 +51,7 @@ jobs:
             SQUASH_LAYERS: "7"
       fail-fast: false
     name: ${{ matrix.SERVICE_NAME }}
-    uses: iiitb-pilot/kattu/.github/workflows/maven-build.yml@master-java21
+    uses: iiitb-pilot/kattu/.github/workflows/maven-build.yml@master
     with:
       SERVICE_LOCATION: ${{ matrix.SERVICE_LOCATION }}
       SERVICE_NAME: ${{ matrix.SERVICE_NAME }}
