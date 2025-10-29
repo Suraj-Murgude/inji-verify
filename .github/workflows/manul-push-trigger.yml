@@ -1,10 +1,6 @@
 name: Maven Package upon a push-ui
 
-on:
-  push:
-    branches:
-      - main
-      - dst-dev-0.13.1
+on: workflow_dispatch
 
 jobs:
   build-dockers-inji-verify:
